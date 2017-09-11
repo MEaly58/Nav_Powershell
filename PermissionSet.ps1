@@ -1,4 +1,4 @@
-#Proof of concept for importing Nav 13 permissions sets
+#Proof of concept for importing Nav permissions sets
 #Import Dynamics Naz modules (The numeric field changes by version)
 Import-Module "${env:ProgramFiles}\Microsoft Dynamics NAV\90\Service\NavAdminTool.ps1"
 #Varaibles
