@@ -7,6 +7,7 @@ $File = "Path to csv file"
 #Import CSV file to bring in users and permissions sets for those users.
 $Permissions  = Import-CSV -path $File
 #Build Users Part of the scritp
+#CSV file format is SetID,User 
 foreach ($Permission in $Permissions)
 {
 $ID = $Permission.'SetID'
