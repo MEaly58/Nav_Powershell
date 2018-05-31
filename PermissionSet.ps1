@@ -1,5 +1,5 @@
 #Proof of concept for importing Nav permissions sets
-#Import Dynamics Naz modules (The numeric field changes by version)
+#Import Dynamics Nav modules (The numeric field changes by version)
 Import-Module "${env:ProgramFiles}\Microsoft Dynamics NAV\90\Service\NavAdminTool.ps1"
 #Varaibles
 $InstanceName = "Nav Instance Name"
