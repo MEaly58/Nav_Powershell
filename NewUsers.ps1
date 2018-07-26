@@ -6,7 +6,7 @@ You can find the user profiles in your system on table "User Personalization (20
 
 
 #Import the NavAdmin Module
-Import-Module “C:\Program Files\Microsoft Dynamics NAV\90\Service\NAVAdminTool.ps1”
+Import-Module “${env:ProgramFiles}\Microsoft Dynamics NAV\90\Service\NAVAdminTool.ps1”
 #Nav version changes the 90 to a differnt number
 #Import the CSV file **Change the -path to the file
 $Users = Import-CSV -path "\\server\share\file.csv"
