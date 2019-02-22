@@ -1,13 +1,13 @@
 #CSV format
 <#!
 FullName,Login,Email,Profile, 
-You can find the user profiles in your system on table "User Personalization (2000000073)"
+You can find the ProfileID in your system on table "Profile Table (2000000072)"
 #> 
 
 
 #Import the NavAdmin Module
-Import-Module “${env:ProgramFiles}\Microsoft Dynamics NAV\90\Service\NAVAdminTool.ps1”
-#Nav version changes the 90 to a differnt number
+Import-Module “${env:ProgramFiles}\Microsoft Dynamics NAV\110\Service\NAVAdminTool.ps1”
+#Nav version changes the 110 to a differnt number
 #Import the CSV file **Change the -path to the file
 $Users = Import-CSV -path "\\server\share\file.csv"
 #Variables
