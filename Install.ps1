@@ -1,4 +1,4 @@
-import-module "${env:ProgramFiles}\Microsoft Dynamics NAV\90\Service\NavInstallationTools.psm1
+import-module "${env:ProgramFiles}\Microsoft Dynamics NAV\90\Service\NavInstallationTools.psm1"
 #Install Nav
 install-navcomponent -configfile \\Share\navinstallmedia\ConfigFile.xml
 
