@@ -20,5 +20,5 @@ $Login = $User.'Login'
 $Email = $User.'Email'
 $Profile = $User.'Profile'
 
-New-NavServerUser -ServerInstance $InstanceName -WindowsAccount $Login -FullName "$FullName" -ProfileID "$Profile" 
+New-NavServerUser -ServerInstance $InstanceName -WindowsAccount $Login -FullName "$FullName" -ContactEmail "$Email" -ProfileID "$Profile" 
 }
