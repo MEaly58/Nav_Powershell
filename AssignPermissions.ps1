@@ -11,7 +11,7 @@ $Instance = "NavInstance"
 forech ($User in $Users)
 {
 $Login = $User.'Login'
-$PermissionSet = $User.'PermisionSet'
+$PermissionSet = $User.'PermissionSet'
 $Company = $User.'Company'
 
 New-NAVServerUserPermissionSet -ServerInstance "$Instance" -WindowsAccount "$Login" -PermissionSetId "$PermissionSet" -CompanyName "$Company" -Scope System
