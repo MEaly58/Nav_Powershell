@@ -8,11 +8,11 @@ Import-Module “${env:ProgramFiles}\Microsoft Dynamics NAV\110\Service\NAVAdmin
 $Users = Import-CSV -path "\\server\share\file.csv"
 $Instance = "NavInstance"
 #Run Script
-forech ($User in $Usres)
+forech ($User in $Users)
 {
 $Login = $User.'Login'
-$PermisionSet = $User.'PermisionSet'
+$PermissionSet = $User.'PermisionSet'
 $Company = $User.'Company'
 
-New-NAVServerUserPermissionSet -ServerInstance "$Instance" -WindowsAccount "$Login" -PermissionSetId "$PermisionSet" -CompanyName "$Company" -Scope System
+New-NAVServerUserPermissionSet -ServerInstance "$Instance" -WindowsAccount "$Login" -PermissionSetId "$PermissionSet" -CompanyName "$Company" -Scope System
 }
