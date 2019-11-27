@@ -1,6 +1,6 @@
 #CSV format
 <#!
-FullName,Login,Email,Profile, 
+FullName,Login,Email,Profile, Company,
 You can find the ProfileID in your system on table "Profile Table (2000000072)"
 #> 
 
