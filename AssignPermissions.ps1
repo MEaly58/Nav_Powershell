@@ -5,10 +5,10 @@
 #Import the NavAdmin Module
 Import-Module “${env:ProgramFiles}\Microsoft Dynamics NAV\110\Service\NAVAdminTool.ps1”
 #Nav version changes the 110 to a different number
-$Users = Import-CSV -path "\\server\share\file.csv"
-$Instance = "NavInstance"
+$Users = Import-CSV -path "\\filepath.csv"
+$Instance = "DynamicsNAV110"
 #Run Script
-forech ($User in $Users)
+foreach ($User in $Users)
 {
 $Login = $User.'Login'
 $PermissionSet = $User.'PermissionSet'
