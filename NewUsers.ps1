@@ -19,6 +19,7 @@ $FullName = $User.'FullName'
 $Login = $User.'Login'
 $Email = $User.'Email'
 $Profile = $User.'Profile'
+$Company = $User.'Company'
 
-New-NavServerUser -ServerInstance $InstanceName -WindowsAccount $Login -FullName "$FullName" -ContactEmail "$Email" -ProfileID "$Profile" 
+New-NavServerUser -ServerInstance $InstanceName -WindowsAccount $Login -FullName "$FullName" -ContactEmail "$Email" -ProfileID "$Profile" -Company "$Company" -LanguageId 1033 -Force
 }
