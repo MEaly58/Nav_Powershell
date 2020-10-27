@@ -1,0 +1,11 @@
+#Import the NavAdmin Module
+Import-Module “${env:ProgramFiles}\Microsoft Dynamics NAV\110\Service\NAVAdminTool.ps1”
+#Import File
+$Users = Import-CSV -path "\\filepath.csv"
+$Instance = "DynamicsNAV110"
+#Run Script
+foreach ($User in $Users)
+{
+$Login = $User.'Login'
+Set-NAVServerUser -ServerInstance $Instance -WindowsAccount "$Login" -State Disabled
+}
