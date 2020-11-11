@@ -19,4 +19,10 @@
 	https://github.com/MEaly58
 #>
 
-#Connect to Source SQL Server
+#Backup Prod SQL DB
+Set-Lcoation "SQLProd:\SQL\ProdServer\Instance"
+Backup-SqlDatabase -Database "ProdDB" -BackupFile "\\mainserver\databasebackup\ProdDB.bak"
+
+#Restore Prod DB into UAT
+Set-Lcoation "SQLUAT:\SQL\UATServer\Instance"
+Restore-SqlDatabase -Database "UATDB" -BackupFile "\\mainserver\databasebackup\MainDB.bak"
