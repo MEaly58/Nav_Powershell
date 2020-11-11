@@ -2,7 +2,7 @@
 .SYNOPSIS
 	Disable a list of Dyanmics Nav18 users from a CSV file
 .DESCRIPTION
-	This is a powershell script to be run as Admin from the Nav app tier server to disable users listed in a csv file.  
+	This is a powershell script to be run as Admin from the Nav app tier server to disable users listed in a csv file.
 .NOTES
 	File Name: disableUsers.ps1
 	Author: Mathew Ealy
